@@ -1,0 +1,233 @@
+/* BuySystem / iTicket Design Overrides */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --bs-primary: #003f72;
+  --bs-secondary: #005e9b;
+  --bs-accent: #eaaa28;
+  --bs-dark: #0d1b2a;
+  --bs-light: #f8fafc;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--bs-dark);
+}
+
+h1, h2, h3, h4, h5, h6, .sec-title, .title, .btn-title, .theme-btn {
+  font-family: var(--font-heading);
+}
+
+/* Color Overrides */
+.text-theme {
+  color: var(--bs-accent) !important;
+}
+
+.bg-theme {
+  background-color: var(--bs-secondary) !important;
+}
+
+.text-accent {
+  color: var(--bs-accent) !important;
+}
+
+/* Custom Header Style */
+.tv-header.header-custom {
+  background-color: var(--bs-primary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tv-header.header-custom .main-menu > ul > li > a {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.tv-header.header-custom .main-menu > ul > li > a:hover,
+.tv-header.header-custom .main-menu > ul > li.active > a {
+  color: var(--bs-accent);
+}
+
+/* Custom Buttons */
+.btn-accent {
+  background-color: var(--bs-accent);
+  color: var(--bs-dark);
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-accent:hover {
+  background-color: #d9991e;
+  color: var(--bs-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline-light-custom {
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light-custom:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Custom Hero Section */
+.hero-custom {
+  background: linear-gradient(135deg, #002b50 0%, #004b82 100%);
+  color: #ffffff;
+  padding: 80px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-custom .hero-subtitle {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.hero-custom h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+}
+
+.hero-badges {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-badge-item i {
+  color: var(--bs-accent);
+  font-size: 1.5rem;
+}
+
+.hero-badge-item div strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.hero-badge-item div span {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.hero-card-dark {
+  background: rgba(13, 27, 42, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 30px;
+  color: #ffffff;
+}
+
+/* Features Grid (Soluções Completas) */
+.solucoes-section {
+  padding: 90px 0;
+  background-color: #ffffff;
+}
+
+.solucao-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 32px 24px;
+  transition: all 0.3s ease;
+  height: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.solucao-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 94, 155, 0.1);
+  border-color: rgba(0, 94, 155, 0.3);
+}
+
+.solucao-card .icon-box {
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 94, 155, 0.08);
+  color: var(--bs-secondary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.solucao-card h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--bs-dark);
+}
+
+.solucao-card p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Safety Section */
+.safety-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.safety-card i {
+  font-size: 1.8rem;
+  color: var(--bs-secondary);
+}
+
+/* Segment/Ideal Para Cards */
+.segment-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  text-center: center;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.segment-card:hover {
+  border-color: var(--bs-accent);
+  transform: translateY(-4px);
+}
+
+.segment-card i {
+  font-size: 2.5rem;
+  color: var(--bs-secondary);
+  margin-bottom: 15px;
+}
