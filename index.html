@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <title>BuySystem | iTicket — Sistema Completo para Venda de Ingressos e Controle de Acesso</title>
+    <title>BuySystem | iTicket — Tecnologia que transforma operações em resultados</title>
     <meta content="O iTicket da BuySystem é a solução completa para venda de ingressos online e presencial, controle de acesso com QR Code, gestão de eventos e relatórios em tempo real." name="description">
     <meta content="venda de ingressos, controle de acesso, iticket, buysystem, ingressos online, gestão de eventos, bilheteria" name="keywords">
     <meta content="INDEX,FOLLOW" name="robots">
@@ -14,7 +14,7 @@
 
     <!-- Favicons -->
     <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
-    <meta content="#003f72" name="theme-color">
+    <meta content="#0543be" name="theme-color">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +29,9 @@
     <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/select2.min.css" rel="stylesheet">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
     <link href="css/odometer.css" rel="stylesheet">
+    <!-- Theme Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/buysystem.css" rel="stylesheet">
 </head>
@@ -44,15 +46,40 @@
             <span class="loader"></span>
         </div>
 
-        <!-- Header Area -->
-        <header class="tv-header header-custom">
+        <!-- Header Area (Modelo Original Template) -->
+        <header class="tv-header header-style1">
+            <!-- Header Top Bar -->
+            <div class="header-top d-none d-md-block">
+                <div class="inner-container container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="top-left">
+                            <ul class="list-style-1 d-flex gap-4 m-0 p-0 list-unstyled">
+                                <li><a href="mailto:contato@buysystem.com.br"><i class="icon fa-regular fa-envelope me-2"></i>contato@buysystem.com.br</a></li>
+                                <li><i class="fa-solid fa-shield-halved me-2 text-theme"></i>Tecnologia de Alta Performance para Eventos</li>
+                            </ul>
+                        </div>
+                        <div class="outer-box">
+                            <ul class="social-icon-one d-flex gap-3 m-0 p-0 list-unstyled align-items-center">
+                                <li><span class="menu-follow_title text-white small me-2">Siga-nos:</span></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="main-wrapper">
+                <!-- Main Menu Area -->
                 <div class="menu-area">
-                    <div class="row align-items-center justify-content-between">
+                    <div class="row align-items-center justify-content-between container mx-auto">
                         <div class="col-auto logo">
                             <div class="header-logo">
-                                <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
-                                    <h3 class="m-0 text-white font-weight-bold" style="font-family: 'Montserrat', sans-serif;"><i class="fa-solid fa-square-check text-theme"></i> Buy<span class="text-theme">System</span></h3>
+                                <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                                    <!-- Slots preparados para imagem de logo do cliente -->
+                                    <img alt="BuySystem Logo" src="images/logo.png" class="d-none logo-img-file">
+                                    <h3 class="m-0 text-dark font-weight-bold" style="font-family: 'Montserrat', sans-serif;"><i class="fa-solid fa-square-check text-primary-custom"></i> Buy<span class="text-primary-custom">System</span></h3>
                                 </a>
                             </div>
                         </div>
@@ -62,9 +89,10 @@
                                     <ul class="navigation">
                                         <li class="active"><a href="#topo">Início</a></li>
                                         <li><a href="#sobre">Quem Somos</a></li>
-                                        <li><a href="#solucoes">Soluções</a></li>
                                         <li><a href="#iticket">iTicket App</a></li>
                                         <li><a href="#diferenciais">Diferenciais</a></li>
+                                        <li><a href="#ecossistema">Ecossistema</a></li>
+                                        <li><a href="#versatilidade">Ideal Para</a></li>
                                         <li><a href="#contato">Contato</a></li>
                                     </ul>
                                 </nav>
@@ -78,9 +106,20 @@
                             </div>
                         </div>
                         <div class="col-auto header-right-wrapper">
-                            <div class="d-flex align-items-center gap-3">
-                                <a href="#contato" class="btn-outline-light-custom d-none d-sm-inline-block">Entrar</a>
-                                <a href="#contato" class="btn-accent">Criar conta</a>
+                            <div class="outer-box">
+                                <a href="#contato" class="theme-btn br-30">
+                                    <span class="link-effect">
+                                        <span class="effect-1">Fale Conosco</span>
+                                        <span class="effect-1">Fale Conosco</span>
+                                    </span>
+                                    <span class="arrow-all">
+                                        <i>
+                                            <svg width="16" height="19" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 6H10M10 6L6 2M10 6L6 10" stroke="#0d1b2a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </i>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -90,7 +129,7 @@
 
         <!-- Mobile Menu -->
         <div class="mobile-menu-wrapper">
-            <div class="mobile-menu-area" style="background: #003f72;">
+            <div class="mobile-menu-area">
                 <button class="menu-toggle"><i class="fas fa-times"></i></button>
                 <div class="mobile-logo">
                     <h3 class="text-white font-weight-bold"><i class="fa-solid fa-square-check text-theme"></i> Buy<span class="text-theme">System</span></h3>
@@ -99,34 +138,33 @@
                     <ul class="navigation clearfix">
                         <li><a href="#topo">Início</a></li>
                         <li><a href="#sobre">Quem Somos</a></li>
-                        <li><a href="#solucoes">Soluções</a></li>
                         <li><a href="#iticket">iTicket App</a></li>
                         <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#ecossistema">Ecossistema</a></li>
+                        <li><a href="#versatilidade">Ideal Para</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
-                </div>
-                <div class="mt-4">
-                    <a href="#contato" class="btn-accent w-100 justify-content-center">Fale Conosco</a>
                 </div>
             </div>
         </div>
 
         <!-- Sticky Header -->
-        <div class="sticky-header" style="background: #003f72;">
+        <div class="sticky-header">
             <div class="container">
                 <div class="menu-area">
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto logo">
-                            <h3 class="m-0 text-white font-weight-bold"><i class="fa-solid fa-square-check text-theme"></i> Buy<span class="text-theme">System</span></h3>
+                            <h3 class="m-0 text-dark font-weight-bold"><i class="fa-solid fa-square-check text-primary-custom"></i> Buy<span class="text-primary-custom">System</span></h3>
                         </div>
                         <div class="col-auto nav-menu">
                             <nav class="main-menu d-none d-lg-inline-block">
                                 <ul class="navigation clearfix">
                                     <li><a href="#topo">Início</a></li>
                                     <li><a href="#sobre">Quem Somos</a></li>
-                                    <li><a href="#solucoes">Soluções</a></li>
                                     <li><a href="#iticket">iTicket App</a></li>
                                     <li><a href="#diferenciais">Diferenciais</a></li>
+                                    <li><a href="#ecossistema">Ecossistema</a></li>
+                                    <li><a href="#versatilidade">Ideal Para</a></li>
                                     <li><a href="#contato">Contato</a></li>
                                 </ul>
                             </nav>
@@ -136,57 +174,59 @@
             </div>
         </div>
 
-        <!-- Hero Section (Estilo Mockup) -->
-        <section id="topo" class="hero-custom">
-            <div class="container">
-                <div class="row align-items-center gy-40">
-                    <div class="col-lg-6">
-                        <div class="hero-left-content">
-                            <span class="badge bg-theme text-white px-3 py-2 rounded-pill mb-3" style="font-size: 0.85rem; font-weight: 600;">PLATAFORMA COMPLETA</span>
-                            <h1>Venda ingressos de forma <span class="text-accent">simples, rápida e segura.</span></h1>
-                            <p class="hero-subtitle">A plataforma completa para criar, divulgar e vender ingressos online e presenciais para qualquer tipo de evento.</p>
-                            
-                            <div class="d-flex flex-wrap gap-3 mt-4">
-                                <a href="#contato" class="btn-accent">Criar meu evento <i class="fa-solid fa-arrow-right"></i></a>
-                                <a href="#iticket" class="btn-outline-light-custom">Conhecer o iTicket</a>
-                            </div>
-
-                            <div class="hero-badges">
-                                <div class="hero-badge-item">
-                                    <i class="fa-solid fa-shield-halved"></i>
-                                    <div>
-                                        <strong>100% Seguro</strong>
-                                        <span>Dados protegidos</span>
+        <!-- Hero Section (Restaurado Modelo Original Template) -->
+        <section id="topo" class="tv-hero-section style-2 overflow-hidden z-2 bg-light">
+            <div class="hero-inner mx-30 ml-mx-0 position-relative">
+                <div class="container-fluid px-0">
+                    <div class="hero-area position-relative">
+                        <div class="bg image"><img src="images/hm2-bg01_1.webp" alt="Background Hero"></div>
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="hero-left-content">
+                                        <h2>ITICKET APP</h2>
+                                        <h1 class="title wow text-anim-left" data-wow-duration="1.5s" data-wow-delay="0.1s">VENDA DE <br> <span class="hero-title_shape"><img class="br-30 wow img-anim-bottom" data-wow-duration="1s" src="images/hm2-shape02.webp" alt=""></span>INGRESSOS</h1>
+                                        <div class="text-icon position-relative mt-3">
+                                            <div class="icon spin2"><img src="images/star.png" alt=""></div>
+                                            <p class="text">O iTicket App transforma qualquer smartphone Android em uma poderosa ferramenta de vendas e validação de ingressos em tempo real.</p>
+                                        </div>
+                                        <a href="#iticket" class="theme-btn mt-40 br-30">
+                                            <span class="link-effect">
+                                                <span class="effect-1">Conhecer o iTicket</span>
+                                                <span class="effect-1">Conhecer o iTicket</span>
+                                            </span>
+                                            <span class="arrow-all">
+                                                <i>
+                                                    <svg width="16" height="19" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 6H10M10 6L6 2M10 6L6 10" stroke="#0543be" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </i>
+                                            </span>
+                                        </a>
+                                        <div class="arrow-shape">
+                                            <img src="images/hm2-arrow01.webp" alt="">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="hero-badge-item">
-                                    <i class="fa-solid fa-bolt"></i>
-                                    <div>
-                                        <strong>Venda Online</strong>
-                                        <span>Em poucos minutos</span>
+                                <div class="col-lg-6">
+                                    <div class="hero-right mbm-d-none">
+                                        <div class="image-box">
+                                            <!-- Imagem do modelo do homem mantida conforme solicitado até troca pela maquininha -->
+                                            <img class="img-anim-left" src="images/hm2-img01_2.webp" alt="Homem Modelo">
+                                        </div>
+                                        <div class="box-thumb mxl-d-none">
+                                            <div class="box-inner">
+                                                <div class="thumb-content">
+                                                    <div class="count"><span class="count-number odometer" data-count="97">0</span>%</div>
+                                                    <p>Satisfação dos Clientes</p>
+                                                </div>
+                                                <div class="thumb-line">
+                                                    <img src="images/hm2-line01.webp" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="right-shape img-anim-right"><img src="images/hm2-shape01_3.webp" alt=""></div>
                                     </div>
-                                </div>
-                                <div class="hero-badge-item">
-                                    <i class="fa-solid fa-chart-line"></i>
-                                    <div>
-                                        <strong>Tempo Real</strong>
-                                        <span>Relatórios completos</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="position-relative text-center">
-                            <!-- Hero Smartphone Illustration / Image -->
-                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&auto=format&fit=crop&q=80" alt="Evento ao vivo" class="img-fluid rounded-4 shadow-lg" style="max-height: 480px; width: 100%; object-fit: cover;">
-                            
-                            <div class="hero-card-dark text-start position-absolute bottom-0 start-50 translate-middle-x w-90 d-none d-sm-block mb-3">
-                                <h5 class="text-accent font-weight-bold mb-2">Mais que uma plataforma, uma experiência completa.</h5>
-                                <div class="d-flex flex-column gap-2" style="font-size: 0.85rem;">
-                                    <div><i class="fa-solid fa-check text-accent me-2"></i> <strong>Para todos os tipos de evento:</strong> Shows, festas, esportes e muito mais</div>
-                                    <div><i class="fa-solid fa-check text-accent me-2"></i> <strong>Personalize do seu jeito:</strong> Sua marca, seu evento, seu controle</div>
-                                    <div><i class="fa-solid fa-check text-accent me-2"></i> <strong>Suporte especializado:</strong> Estamos com você em cada etapa</div>
                                 </div>
                             </div>
                         </div>
@@ -195,112 +235,160 @@
             </div>
         </section>
 
-        <!-- Marquee Section -->
-        <div class="tv-marquee-section bg-light position-relative py-3" style="background: #002240 !important;">
-            <div class="container-fluid p-0 overflow-hidden">
-                <div class="slider__marquee clearfix marquee-wrap style-2">
-                    <ul class="marquee_mode marquee__group text-white" style="font-weight: 600;">
-                        <li class="item m-item"><i class="fa-solid fa-ticket text-accent me-2"></i> Venda de Ingressos</li>
-                        <li class="item m-item"><i class="fa-solid fa-mobile-screen text-accent me-2"></i> App Android iTicket</li>
-                        <li class="item m-item"><i class="fa-solid fa-qrcode text-accent me-2"></i> Controle de Acesso</li>
-                        <li class="item m-item"><i class="fa-solid fa-trophy text-accent me-2"></i> Inscrições Esportivas</li>
-                        <li class="item m-item"><i class="fa-solid fa-credit-card text-accent me-2"></i> PIX & POS Digital</li>
-                        <li class="item m-item"><i class="fa-solid fa-cloud text-accent me-2"></i> Plataforma em Nuvem</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Soluções Completas Section (Do Mockup) -->
-        <section id="solucoes" class="solucoes-section">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <span class="text-theme font-weight-bold text-uppercase" style="letter-spacing: 1px; font-size: 0.9rem;">Soluções Completas</span>
-                    <h2 class="sec-title mt-2">Tudo que você precisa em um só lugar</h2>
-                    <div style="width: 60px; height: 3px; background: var(--bs-accent); margin: 15px auto 0;"></div>
-                </div>
-
-                <div class="row gy-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="solucao-card">
-                            <div class="icon-box"><i class="fa-solid fa-ticket"></i></div>
-                            <h4>Venda de ingressos</h4>
-                            <p>Venda online com rapidez, segurança 24h por dia e emissão imediata para os seus clientes.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="solucao-card">
-                            <div class="icon-box"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                            <h4>Check-in inteligente</h4>
-                            <p>Validação ágil com leitura de QR Code, funcionamento offline e bloqueio de ingressos duplicados.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="solucao-card">
-                            <div class="icon-box"><i class="fa-solid fa-chart-pie"></i></div>
-                            <h4>Relatórios completos</h4>
-                            <p>Acompanhe vendas, ocupação, acessos realizados e resultados em tempo real de qualquer lugar.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="solucao-card">
-                            <div class="icon-box"><i class="fa-solid fa-wallet"></i></div>
-                            <h4>Diversas formas de pagamento</h4>
-                            <p>Aceite Cartão de Crédito, Débito, PIX, Dinheiro e Voucher com integração POS Digital.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="solucao-card">
-                            <div class="icon-box"><i class="fa-solid fa-bullhorn"></i></div>
-                            <h4>Divulgação integrada</h4>
-                            <p>Compartilhe e impulsione seu evento com facilidade através do nosso e-commerce otimizado.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="solucao-card">
-                            <div class="icon-box"><i class="fa-solid fa-headset"></i></div>
-                            <h4>Suporte humanizado</h4>
-                            <p>Atendimento próximo e equipe especializada pronta para ajudar em cada etapa do seu evento.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Quem Somos Section -->
+        <!-- Quem Somos Section (Restaurado Modelo Circular do Template) -->
         <section id="sobre" class="tv-about-section style-2 bg-color2 space">
             <div class="container">
                 <div class="row gy-30 align-items-center">
                     <div class="col-lg-5">
-                        <div class="about-left position-relative">
-                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format&fit=crop&q=80" alt="BuySystem Tecnologia" class="img-fluid rounded-4 shadow">
+                        <div class="about-left">
+                            <div class="title-wrap" data-wow-duration="1.5s" data-wow-delay=".4s">
+                                <div class="sub-title-2 text-theme"><i class="fa-solid fa-circle-check"></i> Quem Somos</div>
+                            </div>
+                            <div class="left-img">
+                                <svg width="466pt" height="447pt" viewBox="0 0 466 447" xmlns="http://www.w3.org/2000/svg">
+                                    <g transform="translate(0 447) scale(.1 -.1)">
+                                    <path d="m1987 4459c-153-21-387-93-573-178-463-209-879-575-1102-969-367-649-398-1465-82-2107 320-650 902-1051 1697-1172 153-23 489-23 648 1 471 69 904 273 1316 618 203 170 351 345 485 575 200 342 308 773 275 1096-39 392-247 693-601 872-120 60-239 101-430 145-283 66-448 136-598 255-142 112-236 238-354 470-39 77-83 158-98 180-69 100-167 170-281 201-70 19-216 25-302 13zm265-30c86-18 175-66 237-128 45-45 72-88 135-211 137-270 251-420 406-534 152-112 284-167 565-236 237-58 315-85 449-153 377-192 586-532 586-951 0-575-296-1168-781-1566-382-313-780-503-1214-581-114-21-161-24-385-24-222 1-272 4-385 24-501 89-879 271-1194 576-243 235-418 514-524 835-78 233-107 421-107 687 0 366 76 693 241 1028 192 391 529 729 974 977 184 103 462 210 631 242 43 8 88 17 99 19 42 9 216 6 267-4z"></path>
+                                    </g>
+                                </svg>
+                                <div class="image"><img src="images/hm2-img01_1.webp" alt="BuySystem Tecnologia"></div>
+                            </div>
+                            <div class="about-left-shape">
+                                <img class="img-anim-right" src="images/hm2-shape01.webp" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-7">
-                        <div class="about-right ms-lg-4">
-                            <div class="title-wrap three">
-                                <div class="sub-title-2 text-theme"><i class="fa-solid fa-circle-check"></i> Quem Somos</div>
-                                <h2 class="sec-title">Tecnologia que transforma operações em resultados</h2>
+                        <div class="about-right">
+                            <div class="title-wrap three" data-wow-duration="1.5s" data-wow-delay=".4s">
+                                <h2 class="sec-title">Tecnologia que Simplifica a Gestão e Potencializa Vendas</h2>
                             </div>
                             <div class="border mt-20 mb-20"></div>
-                            <p class="lead text-dark font-weight-medium">A Buy System é uma empresa de tecnologia focada em entregar soluções inteligentes que simplificam a gestão, potencializam vendas e elevam o controle operacional dos negócios.</p>
-                            <p>Nosso compromisso é transformar desafios complexos em resultados práticos, oferecendo sistemas modernos, seguros e altamente adaptáveis às necessidades de cada cliente.</p>
-                            <p>Com uma plataforma robusta, modular e em constante evolução, proporcionamos alto desempenho, confiabilidade e flexibilidade para diferentes segmentos do mercado. Nossas soluções são desenvolvidas para otimizar processos, reduzir custos operacionais e gerar insights estratégicos em tempo real.</p>
-                            
-                            <div class="row mt-4">
-                                <div class="col-sm-6">
-                                    <div class="d-flex align-items-center gap-2 mb-2">
-                                        <i class="fa-solid fa-circle-check text-theme"></i>
-                                        <strong>Plataforma Modular</strong>
+                            <div class="about-right-content">
+                                <div class="content">
+                                    <div class="icon spin2"><img src="images/hm2-spin01.webp" alt=""></div>
+                                    <div class="text">
+                                        <p>A Buy System é uma empresa de tecnologia focada em entregar soluções inteligentes que elevam o controle operacional dos negócios. Nosso compromisso é transformar desafios complexos em resultados práticos.</p>
+                                        <ul class="features">
+                                            <li><i class="fa-regular fa-circle-check"></i> Plataforma Modular & Escalável</li>
+                                            <li><i class="fa-regular fa-circle-check"></i> Segurança & Alta Performance</li>
+                                        </ul>
                                     </div>
-                                    <p class="small text-muted">Personalizações rápidas e evolução contínua.</p>
                                 </div>
-                                <div class="col-sm-6">
-                                    <div class="d-flex align-items-center gap-2 mb-2">
-                                        <i class="fa-solid fa-circle-check text-theme"></i>
-                                        <strong>Segurança da Informação</strong>
+                                <div class="counter">
+                                    <div class="about-counter">
+                                       <div class="count"><span class="count-number odometer" data-count="100">0</span><span class="plus">%</span></div>
+                                        <div class="text">
+                                            <p>Foco em <br> Resultados</p>
+                                        </div>
                                     </div>
-                                    <p class="small text-muted">Comunicação criptografada e nuvem de alta disponibilidade.</p>
+                                    <div class="scribble-shape moving-y"><img src="images/scribble-1.webp" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="border mt-20 mb-20"></div>
+                            <a href="#contato" class="theme-btn mt-20 br-30">
+                                <span class="link-effect">
+                                    <span class="effect-1">Fale Conosco</span>
+                                    <span class="effect-1">Fale Conosco</span>
+                                </span>
+                                <span class="arrow-all">
+                                    <i>
+                                        <svg width="16" height="19" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 6H10M10 6L6 2M10 6L6 10" stroke="#0543be" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- iTicket App Section (Restaurado Modelo Dark Glassmorphism do Template, sem botões "explore") -->
+        <section id="iticket" class="tv-service-section style-2 bg-light">
+            <div class="tv-service-inner space-top position-relative overflow-hidden mx-30 ml-mx-0">
+                <div class="p-top-left wow slideInLeft z-1"><img src="images/hm2-shape01_2.webp" alt=""></div>
+                <div class="p-top-right wow slideInRight z-1"><img src="images/hm2-shape02_1.webp" alt=""></div>
+                <div class="bg image"><img src="images/hm2-bg01.webp" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="title-wrap two white" data-wow-duration="2s" data-wow-delay=".0s">
+                                <div class="sub-title-2 text-white two"><i class="fa-solid fa-circle-check"></i> iTicket App (Android)</div>
+                                <h2 class="sec-title">Sua Operação Completa <br>na Palma da Mão</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gy-30">
+                        <div class="col-lg-12">
+                            <div class="service-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- Slide 1: Venda de Ingressos -->
+                                    <div class="swiper-slide">
+                                        <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="inner-box">
+                                                <div class="icon"><i class="fa-solid fa-cash-register"></i></div>
+                                                <h4 class="title">Venda Rápida e <br>Intuitiva</h4>
+                                                <div class="border2 mt-20 mb-20"></div>
+                                                <p class="text">Venda de ingressos presenciais, seleção de setores e lotes, controle de disponibilidade em tempo real e emissão imediata.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide 2: Gestão de Eventos -->
+                                    <div class="swiper-slide">
+                                        <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="inner-box">
+                                                <div class="icon"><i class="fa-solid fa-calendar-check"></i></div>
+                                                <h4 class="title">Gestão de Eventos <br>Centralizada</h4>
+                                                <div class="border2 mt-20 mb-20"></div>
+                                                <p class="text">Gerencie múltiplos eventos em um único aplicativo. Visualize datas, horários e alterne rapidamente entre eventos.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide 3: Informações em Tempo Real -->
+                                    <div class="swiper-slide">
+                                        <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="inner-box">
+                                                <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+                                                <h4 class="title">Informações em <br>Tempo Real</h4>
+                                                <div class="border2 mt-20 mb-20"></div>
+                                                <p class="text">Acompanhe ingressos vendidos, receita acumulada, taxa de ocupação e entradas realizadas diretamente pelo app.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide 4: Controle de Acesso -->
+                                    <div class="swiper-slide">
+                                        <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="inner-box">
+                                                <div class="icon"><i class="fa-solid fa-qrcode"></i></div>
+                                                <h4 class="title">Controle de Acesso <br>via QR Code</h4>
+                                                <div class="border2 mt-20 mb-20"></div>
+                                                <p class="text">Validação instantânea de ingressos, bloqueio automático de duplicados e identificação de ingressos cancelados.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide 5: Gestão de Clientes -->
+                                    <div class="swiper-slide">
+                                        <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="inner-box">
+                                                <div class="icon"><i class="fa-solid fa-users"></i></div>
+                                                <h4 class="title">Gestão e Atendimento <br>ao Cliente</h4>
+                                                <div class="border2 mt-20 mb-20"></div>
+                                                <p class="text">Pesquisa rápida de compradores, histórico de compras, reenvio de ingressos e emissão de segunda via.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slide 6: Recebimento e Pagamentos -->
+                                    <div class="swiper-slide">
+                                        <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".2s">
+                                            <div class="inner-box">
+                                                <div class="icon"><i class="fa-solid fa-credit-card"></i></div>
+                                                <h4 class="title">Múltiplas Formas de <br>Pagamento</h4>
+                                                <div class="border2 mt-20 mb-20"></div>
+                                                <p class="text">Aceite PIX, Cartão de Crédito, Débito, Dinheiro, Voucher e integre com maquininhas de POS Digital.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -309,238 +397,261 @@
             </div>
         </section>
 
-        <!-- iTicket App Section -->
-        <section id="iticket" class="tv-service-section style-2 bg-light space">
+        <!-- Por Que Escolher Section (Restaurado Modelo Rapaz + Grade 2x2) -->
+        <section id="diferenciais" class="tv-choose-section style-2 space-top bg-light">
             <div class="container">
-                <div class="row justify-content-center text-center mb-5">
-                    <div class="col-lg-8">
-                        <div class="sub-title-2 text-theme"><i class="fa-solid fa-circle-check"></i> Nosso Principal Produto</div>
-                        <h2 class="sec-title">Apresentação Comercial — iTicket App</h2>
-                        <p class="text-muted">Transforme qualquer smartphone Android em uma poderosa ferramenta de vendas e controle de acesso em tempo real.</p>
+                <div class="row gy-30">
+                    <div class="col-lg-6 col-xl-6">
+                        <div class="tv-choose-left">
+                            <div class="title-wrap three" data-wow-duration="1.5s" data-wow-delay=".4s">
+                                <div class="sub-title-2 text-theme"><i class="fa-solid fa-circle-check"></i> Por Que Escolher</div>
+                                <h2 class="sec-title">Desenvolvido para Operações <br> Profissionais de Alto Nível</h2>
+                            </div>
+                            <!-- Modelo do rapaz mantido conforme solicitado -->
+                            <div class="choose-left-img img-anim-left"><img src="images/hm2-img01_3.webp" alt="Diferenciais BuySystem"></div>
+                            <div class="circle-shape"><img src="images/hm2-circle-shape.webp" alt=""></div>
+                            <div class="growth"><i class="fa-solid fa-circle-check"></i>Alta Estabilidade</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-6">
+                       <div class="tv-choose-right-box">
+                            <div class="hero-social-proof">
+                                <div class="happy-customers ms-0">
+                                    <div class="text text-primary-custom">100% Sincronizado</div>
+                                    <div class="rating-viewers">Operação presencial e online em tempo real</div>
+                                </div>
+                            </div>
+                            <div class="border mt-40 mb-40"></div>
+                            <div class="feature-grid">
+                                <div class="feature-item">
+                                    <span class="icon dark"><i class="fa-solid fa-cubes text-white"></i></span>
+                                    <h4>Arquitetura Modular</h4>
+                                    <p>Personalizações rápidas e evolução contínua da plataforma para acompanhar seu crescimento.</p>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                                    <h4>Segurança Total</h4>
+                                    <p>Comunicação criptografada, controle de permissões por usuário e infraestrutura em nuvem.</p>
+                                </div>
+                            </div>
+                            <div class="feature-grid mt-40">
+                                <div class="feature-item">
+                                    <span class="icon"><i class="fa-solid fa-bolt"></i></span>
+                                    <h4>Alta Disponibilidade</h4>
+                                    <p>Plataforma estável e projetada para operações que exigem máxima velocidade e zero quedas.</p>
+                                </div>
+                                <div class="feature-item">
+                                    <span class="icon dark"><i class="fa-solid fa-headset text-white"></i></span>
+                                    <h4>Suporte Especializado</h4>
+                                    <p>Equipe focada na excelência do seu evento do planejamento até o pós-venda.</p>
+                                </div>
+                            </div>
+						</div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="row gy-4">
-                    <!-- Slide 1 & 2: Venda de Ingressos -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="solucao-card bg-white">
-                            <div class="icon-box"><i class="fa-solid fa-cash-register"></i></div>
-                            <h4>Venda Rápida e Intuitiva</h4>
-                            <p>Realize vendas presenciais pelo aplicativo com poucos toques. Seleção de setores, lotes, controle de disponibilidade, aplicação de descontos, cortesias e emissão imediata.</p>
+        <!-- Ecossistema BuySystem (Restaurado Modelo Works do Template) -->
+        <section id="ecossistema" class="tv-portfolio-section bg-light position-relative z-2">
+            <div class="portfolio-inner space br-30 ml-br-0 overflow-hidden position-relative mx-30 xxl-mx-0">
+                <div class="bg image"><img src="images/hm2-bg01_3.webp" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="portfolio-title mt--25">
+                                <h2 class="text-white text-center">ECO<span class="text-theme">SSIS</span>TEMA</h2>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- Slide 3: Gestão de Eventos -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="solucao-card bg-white">
-                            <div class="icon-box"><i class="fa-solid fa-calendar-days"></i></div>
-                            <h4>Gestão Centralizada de Eventos</h4>
-                            <p>Gerencie diversos eventos em um único aplicativo. Visualize eventos ativos, consulte datas/horários, acompanhe disponibilidade e alterne rapidamente entre eles.</p>
+                </div>
+                <div class="container-fluid px-60 lg-px-15 xxl-px-50 mt-4">
+                    <div class="row align-items-center gy-30">
+                        <!-- Card 1: App iTicket -->
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="tv-portfolio-box">
+                                <div class="box-image">
+                                    <img src="images/buysystem/app-android-home.png" alt="iTicket App Android">
+                                </div>
+                                <div class="box-content">
+                                    <h3><a href="#contato">iTicket App Android</a></h3>
+                                    <p>Venda e Gestão Mobile</p>
+                                    <div class="border"></div>
+                                    <div class="tags">
+                                        <span class="tag">ANDROID</span>
+                                        <span class="tag">BILHETERIA</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- Slide 4: Informações em Tempo Real -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="solucao-card bg-white">
-                            <div class="icon-box"><i class="fa-solid fa-chart-line"></i></div>
-                            <h4>Controle Total da Operação</h4>
-                            <p>Acompanhe ingressos vendidos, receita acumulada, taxa de ocupação, entradas realizadas, pedidos pendentes e cancelamentos ao vivo pelo app.</p>
+                        <!-- Card 2: BS Checkin -->
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="tv-portfolio-box">
+                                <div class="box-image">
+                                    <img src="images/buysystem/bs-checkin.png" alt="BS Checkin Validação">
+                                </div>
+                                <div class="box-content">
+                                    <h3><a href="#contato">BS Checkin App</a></h3>
+                                    <p>Validação Ágil de QR Code</p>
+                                    <div class="border"></div>
+                                    <div class="tags">
+                                        <span class="tag">QR CODE</span>
+                                        <span class="tag">ACESSO</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- Slide 5: Gestão de Clientes -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="solucao-card bg-white">
-                            <div class="icon-box"><i class="fa-solid fa-users-gear"></i></div>
-                            <h4>Atendimento ao Cliente</h4>
-                            <p>Pesquisa rápida de compradores, histórico completo de compras, reenvio de ingressos, segunda via e cancelamento seguro mediante permissão.</p>
-                        </div>
-                    </div>
-
-                    <!-- Slide 6: Controle de Acesso -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="solucao-card bg-white">
-                            <div class="icon-box"><i class="fa-solid fa-qrcode"></i></div>
-                            <h4>Validação de QR Code</h4>
-                            <p>Transforme o celular em um validador instantâneo. Leitura rápida de QR Code, funcionamento online/offline, bloqueio de duplicatas e alertas de cancelados.</p>
-                        </div>
-                    </div>
-
-                    <!-- Slide 7: Recebimento e Pagamentos -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="solucao-card bg-white">
-                            <div class="icon-box"><i class="fa-solid fa-credit-card"></i></div>
-                            <h4>Pagamentos Flexíveis</h4>
-                            <p>Compatível com PIX, Cartão de Crédito, Débito, Dinheiro, Voucher e integração direta com maquininha POS Digital.</p>
+                        <!-- Card 3: Dashboard Admin & POS Digital -->
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="tv-portfolio-box">
+                                <div class="box-image">
+                                    <img src="images/buysystem/app-dashboard.png" alt="Dashboard e Relatórios">
+                                </div>
+                                <div class="box-content">
+                                    <h3><a href="#contato">Painel Admin & POS Digital</a></h3>
+                                    <p>Relatórios e Integração Total</p>
+                                    <div class="border"></div>
+                                    <div class="tags">
+                                        <span class="tag">GESTAO</span>
+                                        <span class="tag">API / POS</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Por que Escolher Section -->
-        <section id="diferenciais" class="tv-choose-section style-2 space bg-light2">
+        <!-- Versatilidade / Ideal Para Section (Restaurado Modelo Achievement do Template) -->
+        <section id="versatilidade" class="tv-achivement-section bg-light space overflow-hidden">
             <div class="container">
                 <div class="row gy-30 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="title-wrap three">
-                            <div class="sub-title-2 text-theme"><i class="fa-solid fa-circle-check"></i> Por Que Escolher</div>
-                            <h2 class="sec-title">Diferenciais que impulsionam o seu negócio</h2>
-                            <p class="mt-3">O iTicket não é apenas um sistema de bilheteria — é uma ferramenta estratégica projetada para operações que exigem velocidade, estabilidade e total confiabilidade.</p>
-                        </div>
-
-                        <div class="d-flex flex-column gap-3 mt-4">
-                            <div class="safety-card">
-                                <i class="fa-solid fa-sync"></i>
-                                <div>
-                                    <h5 class="mb-1 font-weight-bold">Sincronização em Tempo Real</h5>
-                                    <p class="mb-0 text-muted small">Todas as vendas online e presenciais sincronizadas instantaneamente com o painel administrativo.</p>
+                    <!-- Coluna Esquerda: Mini-cards dos 6 segmentos -->
+                    <div class="col-lg-6 col-xxl-6">
+                        <div class="achivement-content-wrapper">
+                            <div class="title-wrap three" data-wow-duration="1.5s" data-wow-delay=".4s">
+                                <div class="sub-title-2 text-theme"><i class="fa-solid fa-circle-check"></i> Versatilidade</div>
+                                <h2 class="sec-title">Ideal para Qualquer <br>Tipo de Operação</h2>
+                                <p>Nossa arquitetura modular permite atender diferentes operações com máxima eficiência e controle de acesso.</p>
+                            </div>
+                            
+                            <div class="row gy-3 mt-2">
+                                <div class="col-sm-6">
+                                    <div class="segment-mini-card">
+                                        <i class="fa-solid fa-masks-theater"></i>
+                                        <span>Teatros & Shows</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="segment-mini-card">
+                                        <i class="fa-solid fa-trophy"></i>
+                                        <span>Eventos Esportivos</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="segment-mini-card">
+                                        <i class="fa-solid fa-ferris-wheel"></i>
+                                        <span>Parques & Atrações</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="segment-mini-card">
+                                        <i class="fa-solid fa-building-columns"></i>
+                                        <span>Museus & Cultura</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="segment-mini-card">
+                                        <i class="fa-solid fa-music"></i>
+                                        <span>Festivais & Feiras</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="segment-mini-card">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                        <span>Corporativo</span>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="safety-card">
-                                <i class="fa-solid fa-user-shield"></i>
-                                <div>
-                                    <h5 class="mb-1 font-weight-bold">Controle de Permissões</h5>
-                                    <p class="mb-0 text-muted small">Níveis de acesso personalizados por usuário para garantir segurança total da operação.</p>
-                                </div>
-                            </div>
-
-                            <div class="safety-card">
-                                <i class="fa-solid fa-lock"></i>
-                                <div>
-                                    <h5 class="mb-1 font-weight-bold">Comunicação Criptografada</h5>
-                                    <p class="mb-0 text-muted small">Proteção máxima dos dados de compradores e transações financeiras em nuvem.</p>
-                                </div>
-                            </div>
+                       </div>
+                    </div>
+                    
+                    <!-- Coluna Central: Imagem do homem segurando tablet com SVG circular -->
+                    <div class="col-lg-3 col-xxl-3 lpm-d-none">
+                        <div class="achivement-image-wrapper">
+                            <div class="thumb-bg">
+								<svg version="1.1" viewBox="0 0 586.23 500.74" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-1.0738 -1.2546)"><path d="m211.33 501.74c-187.01-7.406-269.07-172.39-164.01-329.74 130.19-194.98 434.71-232.19 520.53-63.614 85.759 168.44-126.35 402.46-356.52 393.35zm63.333-96.994c199.68-42.298 301.86-265.24 140.24-305.98-121.19-30.549-281.94 59.67-317 177.91-27.173 91.643 57.87 153.26 176.77 128.07z"></path></g></svg>
+							</div>
+                            <div class="thumb img-anim-right"><img src="images/hm2-img01_5.webp" alt="Homem com Tablet"></div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1556742393-d75f468bfcb0?w=800&auto=format&fit=crop&q=80" alt="Operação iTicket" class="img-fluid rounded-4 shadow">
+                    <!-- Coluna Direita: Cards de Métricas -->
+                    <div class="col-lg-3 col-xxl-3">
+                        <div class="achivement-right-wrapper">
+                            <div class="counter-box">
+                                <div class="counter-inner">
+                                    <div class="icon"><i class="fa-solid fa-calendar-check text-primary-custom fa-xl"></i></div>
+                                    <div class="count"><span class="count-number odometer" data-count="500">0</span><span class="plus">+</span></div>
+                                </div>
+                                <p>Eventos Realizados</p>
+                            </div>
+                            <div class="counter-box">
+                                <div class="counter-inner">
+                                    <div class="icon"><i class="fa-solid fa-ticket text-primary-custom fa-xl"></i></div>
+                                    <div class="count"><span class="count-number odometer" data-count="50">0</span>K<span class="plus">+</span></div>
+                                </div>
+                                <p>Ingressos Emitidos</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Integrações Section (Tudo Conectado) -->
-        <section class="tv-portfolio-section space bg-dark text-white">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <span class="text-accent font-weight-bold text-uppercase">Ecossistema BuySystem</span>
-                    <h2 class="sec-title text-white mt-2">Integração Total — Tudo Conectado</h2>
-                    <p class="text-light opacity-75">O iTicket App faz parte de um ecossistema completo que garante sincronização entre todos os módulos.</p>
-                </div>
-
-                <div class="row gy-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="p-4 rounded-4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
-                            <i class="fa-solid fa-globe text-accent mb-3" style="font-size: 2rem;"></i>
-                            <h4 class="text-white">Site de Vendas</h4>
-                            <p class="text-light opacity-75 small">E-commerce moderno e otimizado para os clientes comprarem ingressos online de forma simples.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="p-4 rounded-4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
-                            <i class="fa-solid fa-gauge-high text-accent mb-3" style="font-size: 2rem;"></i>
-                            <h4 class="text-white">Painel Administrativo</h4>
-                            <p class="text-light opacity-75 small">Gestão centralizada do evento, financeiro, relatórios detalhados e usuários.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="p-4 rounded-4" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
-                            <i class="fa-solid fa-calculator text-accent mb-3" style="font-size: 2rem;"></i>
-                            <h4 class="text-white">POS Digital</h4>
-                            <p class="text-light opacity-75 small">Integração com máquinas de cartão para bilheteria física rápida e segura.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Ideal Para Section -->
-        <section class="space bg-light">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <span class="text-theme font-weight-bold text-uppercase">Versatilidade</span>
-                    <h2 class="sec-title mt-2">Ideal para Qualquer Tipo de Operação</h2>
-                </div>
-
-                <div class="row gy-4">
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="segment-card">
-                            <i class="fa-solid fa-masks-theater"></i>
-                            <h6 class="font-weight-bold m-0">Teatros & Shows</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="segment-card">
-                            <i class="fa-solid fa-trophy"></i>
-                            <h6 class="font-weight-bold m-0">Eventos Esportivos</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="segment-card">
-                            <i class="fa-solid fa-ferris-wheel"></i>
-                            <h6 class="font-weight-bold m-0">Parques & Atrações</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="segment-card">
-                            <i class="fa-solid fa-building-columns"></i>
-                            <h6 class="font-weight-bold m-0">Museus & Cultura</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="segment-card">
-                            <i class="fa-solid fa-music"></i>
-                            <h6 class="font-weight-bold m-0">Festivais & Feiras</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="segment-card">
-                            <i class="fa-solid fa-briefcase"></i>
-                            <h6 class="font-weight-bold m-0">Corporativo</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
+        <!-- Contact Section (Aprimorada UX/UI) -->
         <section id="contato" class="tv-contact-section style-2 space bg-color2">
             <div class="container">
                 <div class="row align-items-center gy-30">
                     <div class="col-lg-6">
                         <div class="title-wrap">
                             <div class="sub-title-2 text-theme"><i class="fa-solid fa-circle-check"></i> Fale Conosco</div>
-                            <h2 class="sec-title">Transforme a gestão de ingressos do seu negócio</h2>
-                            <p class="mt-3">Entre em contato com nossa equipe especialista para tirar dúvidas, solicitar uma demonstração do iTicket App ou criar seu evento agora mesmo.</p>
+                            <h2 class="sec-title">Transforme a Gestão de Ingressos do Seu Negócio</h2>
+                            <p class="mt-3">Nossa equipe entra em contato em até 24 horas para tirar dúvidas e apresentar a demonstração do iTicket App.</p>
                             
                             <div class="mt-4">
-                                <div class="d-flex align-items-center gap-3 mb-3">
-                                    <div class="icon-box bg-white text-theme rounded-circle p-3 shadow-sm">
-                                        <i class="fa-solid fa-envelope fa-lg"></i>
-                                    </div>
+                                <div class="contact-info-block">
+                                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
                                     <div>
-                                        <small class="text-muted d-block">E-mail de Contato</small>
+                                        <small class="text-muted d-block">E-mail Direto</small>
                                         <strong>contato@buysystem.com.br</strong>
+                                    </div>
+                                </div>
+                                <div class="contact-info-block">
+                                    <div class="icon"><i class="fa-solid fa-clock"></i></div>
+                                    <div>
+                                        <small class="text-muted d-block">Atendimento Comercial</small>
+                                        <strong>Segunda a Sexta, 8h às 18h</strong>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="contact-form style-2 bg-white p-4 p-md-5 rounded-4 shadow-sm">
+                        <div class="contact-form style-2 bg-white p-4 p-md-5 rounded-4 shadow">
                             <h3 class="sec-title mb-4" style="font-size: 1.5rem;">Solicitar Demonstração</h3>
                             <form id="contact_form" class="contact_form" action="#" method="post">
                                 <div class="form-group mb-3">
-                                    <input type="text" id="fullName" name="name" class="form-control py-3" placeholder="Seu Nome" required="">
+                                    <input type="text" id="fullName" name="name" class="form-control py-3" placeholder="Seu Nome Completo" required="">
                                 </div>
-                                <div class="form-group mb-3">
-                                    <input type="email" id="userEmail" name="email" class="form-control py-3" placeholder="Seu E-mail" required="">
+                                <div class="row">
+                                    <div class="col-md-6 form-group mb-3">
+                                        <input type="email" id="userEmail" name="email" class="form-control py-3" placeholder="Seu E-mail" required="">
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <input type="text" id="userPhone" name="phone" class="form-control py-3" placeholder="WhatsApp / Telefone">
+                                    </div>
                                 </div>
                                 <div class="form-group mb-3">
                                     <select class="form-select py-3" id="service" name="service">
@@ -554,9 +665,9 @@
                                     </select>
                                 </div>
                                 <div class="form-group mb-4">
-                                    <textarea id="msg" name="msg" class="form-control" rows="4" placeholder="Como podemos ajudar o seu evento?" required=""></textarea>
+                                    <textarea id="msg" name="msg" class="form-control" rows="4" placeholder="Conte-nos um pouco sobre seu evento..." required=""></textarea>
                                 </div>
-                                <button type="submit" class="btn-accent w-100 justify-content-center">
+                                <button type="submit" class="theme-btn w-100 justify-content-center py-3">
                                     Enviar Mensagem <i class="fa-solid fa-paper-plane ms-2"></i>
                                 </button>
                             </form>
@@ -566,34 +677,78 @@
             </div>
         </section>
 
-        <!-- Footer Section -->
-        <footer class="footer-section pt-5 bg-dark text-white position-relative">
-            <div class="container pb-4">
-                <div class="row gy-4">
-                    <div class="col-lg-5 col-md-6">
-                        <h3 class="text-white font-weight-bold mb-3"><i class="fa-solid fa-square-check text-accent"></i> Buy<span class="text-accent">System</span></h3>
-                        <p class="text-light opacity-75 pe-lg-4">Tecnologia que transforma operações em resultados e impulsiona o crescimento do seu negócio.</p>
-                        <p class="small text-light opacity-50">Buy System © 2025. Todos os direitos reservados.</p>
+        <!-- Footer Section (Aprimorado Modelo 4 Colunas Dark) -->
+        <footer class="footer-section z-1 br-30 xxl-br-0 pt-75 bg-dark position-relative mx-30 mb-30 xxl-m-0 overflow-hidden">
+            <div class="footer-top space">
+                <div class="container">
+                    <div class="row gy-4">
+                        <!-- Coluna 1: Logo & Contato -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="brand-info">
+                                <h3 class="text-white font-weight-bold mb-3"><i class="fa-solid fa-square-check text-theme"></i> Buy<span class="text-theme">System</span></h3>
+                                <p class="text-light opacity-75 small">Buy System. Tecnologia que transforma operações em resultados e impulsiona o crescimento do seu negócio.</p>
+                                <div class="contact-item mt-3">
+                                    <a href="mailto:contato@buysystem.com.br" class="text-light text-decoration-none small">
+                                        <i class="fa-regular fa-envelope text-theme me-2"></i> contato@buysystem.com.br
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Coluna 2: Navegação -->
+                        <div class="col-lg-2 col-md-6">
+                            <h5 class="text-white mb-3">Navegação</h5>
+                            <ul class="list-unstyled d-flex flex-column gap-2 text-light opacity-75 small">
+                                <li><a href="#topo" class="text-light text-decoration-none">Início</a></li>
+                                <li><a href="#sobre" class="text-light text-decoration-none">Quem Somos</a></li>
+                                <li><a href="#iticket" class="text-light text-decoration-none">iTicket App</a></li>
+                                <li><a href="#diferenciais" class="text-light text-decoration-none">Diferenciais</a></li>
+                                <li><a href="#contato" class="text-light text-decoration-none">Contato</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Coluna 3: Produtos -->
+                        <div class="col-lg-3 col-md-6">
+                            <h5 class="text-white mb-3">Soluções</h5>
+                            <ul class="list-unstyled d-flex flex-column gap-2 text-light opacity-75 small">
+                                <li>iTicket App Android</li>
+                                <li>BS Checkin Validação</li>
+                                <li>Controle de Acesso QR Code</li>
+                                <li>Painel Admin & POS Digital</li>
+                                <li>API para Integração</li>
+                            </ul>
+                        </div>
+
+                        <!-- Coluna 4: Newsletter -->
+                        <div class="col-lg-3 col-md-6">
+                            <h5 class="text-white mb-3">Novidades</h5>
+                            <p class="text-light opacity-75 small">Receba atualizações sobre novas funcionalidades do iTicket.</p>
+                            <form class="newsletter-form mt-3" action="#" method="post">
+                                <div class="form-group position-relative">
+                                    <input type="email" name="email" class="form-control bg-secondary text-white border-0 py-2 pe-5" placeholder="Seu e-mail" required="">
+                                    <button type="submit" class="btn btn-primary position-absolute top-0 end-0 h-100 px-3 border-0 bg-primary-custom">
+                                        <i class="far fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h5 class="text-white mb-3">Navegação</h5>
-                        <ul class="list-unstyled d-flex flex-column gap-2 text-light opacity-75">
-                            <li><a href="#topo" class="text-light text-decoration-none">Início</a></li>
-                            <li><a href="#sobre" class="text-light text-decoration-none">Quem Somos</a></li>
-                            <li><a href="#solucoes" class="text-light text-decoration-none">Soluções</a></li>
-                            <li><a href="#iticket" class="text-light text-decoration-none">iTicket App</a></li>
-                            <li><a href="#contato" class="text-light text-decoration-none">Contato</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <h5 class="text-white mb-3">Produtos & Serviços</h5>
-                        <ul class="list-unstyled d-flex flex-column gap-2 text-light opacity-75">
-                            <li>Venda Online de Ingressos</li>
-                            <li>iTicket App (Android)</li>
-                            <li>Controle de Acesso QR Code</li>
-                            <li>Gestão de Inscrições Esportivas</li>
-                            <li>POS Digital & Bilheteria Presencial</li>
-                        </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom py-3 border-top border-secondary">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-start">
+                            <p class="mb-0 small text-light opacity-75">Copyright © 2025 BuySystem. Todos os Direitos Reservados.</p>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                            <div class="footer-policy small text-light opacity-75">
+                                <a href="#" class="text-light text-decoration-none me-3">Política de Privacidade</a>
+                                <a href="#" class="text-light text-decoration-none">Termos de Uso</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -603,11 +758,11 @@
     <!-- Scroll To Top -->
     <div class="scrollToTop">
         <div class="arrowUp">
-            <i class="fa-solid fa-arrow-up"></i>
+            <i class="fa-light fa-arrow-up"></i>
         </div>
     </div>
 
-    <!-- Jquery & JS Scripts -->
+    <!-- Jquery & JS Files -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/gsap.min.js"></script>
